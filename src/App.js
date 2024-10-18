@@ -21,13 +21,13 @@ const App = () => {
       <Navbar />
       <main>
         <Routes>
-          <Route path="" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/ourProducts" element={<OurProducts />} />
           <Route path="/MachineTypes1" element={<WashingMachineTypes />} />
           <Route path="/machine/:id" element={<MachineDetailPage />} />
 
-          <Route path="//MachineTypes2" element={<InstantWaterHeaterTypes />} />
+          <Route path="/MachineTypes2" element={<InstantWaterHeaterTypes />} />
           <Route path="/water-heater/specifications/:modelId" element={<WaterHeaterSpecificationPage />} />
         </Routes>
       </main>
