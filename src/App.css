@@ -1,0 +1,235 @@
+/* Apply flexbox to the main container */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure that Router takes up the available space */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Ensure that the main content grows as needed */
+main {
+  flex: 1;
+}
+
+/* Footer styles - stays at the bottom */
+footer {
+  background-color: #f8f9fa; /* Add your background color */
+  padding: 20px;
+  text-align: center;
+  margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  
+}
+
+
+/* contact form */
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto; /* Center the form */
+}
+
+.contact-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-form {
+  padding: 20px;
+  background: #f8f9fa; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.contact-input {
+  transition: border-color 0.2s ease;
+}
+
+.contact-input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+}
+
+.contact-button {
+  width: 100%; /* Full width button */
+  padding: 10px; /* Add padding */
+  font-size: 1.1rem; /* Increase font size */
+  transition: background-color 0.2s ease;
+}
+
+.contact-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+.welcome-section {
+  /* padding: 2rem; */
+  /* background: linear-gradient(to right, #f9f9f9, #ffffff); Light background for contrast */
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+}
+
+.home-title {
+  font-family: 'Poppins', sans-serif; /* Attractive font style */
+  /* font-size: 2.5rem;  */
+  /* Font size for title */
+  /* margin: 1rem 0; */
+   /* Space above and below the title */
+}
+
+.home-description {
+  margin-left: 440px;
+  position: absolute;
+  bottom: 0;
+  color: #E74C3C ; /*
+  font-family: 'Roboto', sans-serif; /* Clean description font */
+  font-size: 1.25rem; /* Readable description font size */
+  margin-bottom: 1.5rem; /* Space below description */
+}
+
+.tagline {
+  font-size: 1.1rem; /* Smaller than description but still visible */
+  font-weight: 500; /* Medium weight for contrast */
+  color: #007bff; /* Bootstrap primary color for emphasis */
+}
+
+.washing-machine-img {
+  max-width: 400px; /* Adjust width of the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 20px; /* Space between text and image */
+}
+
+
+.products-title {
+  margin-bottom: 4rem;
+}
+
+.product-card {
+  border-radius: 1rem; /* Rounded corners for product cards */
+  transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+}
+
+.product-card img {
+  transition: filter 0.3s; /* Smooth filter transition */
+}
+
+.product-card:hover img {
+  filter: brightness(1.1); /* Slightly brighten the image on hover */
+}
+
+.product-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.product-description {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.buy-button {
+  transition: background-color 0.2s; /* Smooth background color transition */
+}
+
+.buy-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+.card-footer {
+  background: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* navbar */
+.navbar {
+  background-color: #f8f9fa; /* Light background */
+  /* border-bottom: 2px solid #dee2e6;  */
+}
+
+.nav-link {
+  color: #333; /* Darker link color for contrast */
+  font-weight: 500; /* Semi-bold for emphasis */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Change color on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Larger brand name */
+  font-weight: bold; /* Bold brand name */
+  color: #007bff; /* Brand color */
+}
+
+
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2rem; /* Smaller title on mobile */
+  }
+
+  .home-description {
+    position: relative !important;
+    font-size: 1rem; /* Smaller description on mobile */
+    margin-left: 0; /* Ensure it's centered */
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome-section {
+    padding-top: 2rem; /* Adjust padding for small screens */
+  }
+}
+
+
+/* Add this to your CSS file */
+@media (max-width: 768px) {
+  .font-size-large {
+    font-size: 1.5rem !important; /* Tablet size */
+  }
+}
+
+@media (max-width: 576px) {
+  .font-size-large {
+    font-size: 1.25rem !important; /* Mobile size */
+  }
+}
