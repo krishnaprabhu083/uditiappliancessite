@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/uditiappliances/static/css/main.88c34a55.css",
-    "main.js": "/uditiappliances/static/js/main.33742a62.js",
+    "main.js": "/uditiappliances/static/js/main.db75303b.js",
     "static/media/premiummain.jpg": "/uditiappliances/static/media/premiummain.c7a4cefbb84a8cffb3f8.jpg",
     "static/media/classicmain.jpg": "/uditiappliances/static/media/classicmain.545efec43dff111a4cc3.jpg",
     "static/media/heatermain.jpg": "/uditiappliances/static/media/heatermain.0e6297acb356c7179310.jpg",
@@ -13,10 +13,10 @@
     "static/media/logo2.png": "/uditiappliances/static/media/logo2.277fd533f4bee1ae6257.png",
     "index.html": "/uditiappliances/index.html",
     "main.88c34a55.css.map": "/uditiappliances/static/css/main.88c34a55.css.map",
-    "main.33742a62.js.map": "/uditiappliances/static/js/main.33742a62.js.map"
+    "main.db75303b.js.map": "/uditiappliances/static/js/main.db75303b.js.map"
   },
   "entrypoints": [
     "static/css/main.88c34a55.css",
-    "static/js/main.33742a62.js"
+    "static/js/main.db75303b.js"
   ]
 }
